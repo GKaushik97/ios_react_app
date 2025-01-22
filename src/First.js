@@ -1,9 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
-function First() {
+export default function First() {
     return (
-        <div>Hello Wolrd</div>
+        <div className='fluid-container'>Hello Wolrd</div>
     );
 }
-export default First;
