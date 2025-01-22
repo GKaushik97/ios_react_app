@@ -10,8 +10,6 @@ const ListofDocs = () => {
     axios
       .get('http://localhost/ios/public/iosApi/list_of_docs')
         .then((response) => {
-            // alert(response);
-            console.log(response);
         setDocs(response.data.data); // Assuming the response is JSON
       })
       .catch((error) => {
