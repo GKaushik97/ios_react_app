@@ -15,7 +15,7 @@ export default function Project() {
                 setError(error.message);
             });
     }, []);
-    const OpenModal = (project) => {
+    const OpenModal = (project) => {  
         setSelectedProject(project);
     }
     const OpenEditModal = (project_ext) => {
