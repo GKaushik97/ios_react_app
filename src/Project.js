@@ -10,7 +10,6 @@ export default function Project() {
     useEffect(() => {
         axios.get('http://localhost/ios/public/iosApi/getProjectDetails')
             .then((response) => {
-                console.log(response);
                 setProject(response.data.project_details);
             }).catch((error) => {
                 setError(error.message);
